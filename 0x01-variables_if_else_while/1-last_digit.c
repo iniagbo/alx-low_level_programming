@@ -1,53 +1,53 @@
-#include <stdio.h>
+#include <stdio.h>                                                                                                                    
 
-#include <stdlib.h>
+#include <stdlib.h>                                                                                                                    
 
-#include <time.h>
+#include <time.h>                                                                                                                     
 
-/**
+/**                                                                                                                                   
  *
- *  * main - Entry point
+ *  * main - Entry point                                                                              
  *
- *   *
+ *   * Return: Always 0 (Success)                                                                                                                  
  *
- *    * Return: Always 0 (Success)
- *
- *     */
+ *    */                                                                                                                                   
 
-int main(void)
+int main(void)                                                                                                                        
 
-{
+{                                                                                                                                     
 
-		int n;
+	        int n;  
 
-			int L;
+		       
 
-				char str[] = "Last digit of";
+		        srand(time(0));                                                                                                               
 
+			        n = rand() - RAND_MAX / 2;                                                                                                    
 
+				                                                                                                                           
 
-					srand(time(0));
+				        if (n > 0)                                                                                                                         
 
-						n = rand() - RAND_MAX / 2;
+						                printf("%d is positive\n", n);                                                                                        
 
-							L = n % 10;
+					                                                                                                          
 
+					        else if (n == 0)                                                                                                              
 
+							                                                                                                                                     
 
-								if (L > 5)
+							                printf("%d is zero\n", n);                                                                                            
 
-											printf("%s %d is %d and is greater than 5\n", str, n, L);
+						                                                                                                                                    
 
-									else if (L == 0)
+						        else                                                                                                                          
 
-												printf("%s %d is %d and is 0\n", str, n, L);
+								                                                                                                                                     
 
-										else if (L < 6)
+								                printf("%d is negative\n", n);                                                                                        
 
-													printf("%s %d is %d and is less than 6 and not 0\n", str, n, L);
+							                                                                                                                                     
 
+							        return (0);                                                                                                                   
 
-
-											return (0);
-
-}
+}  
