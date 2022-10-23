@@ -1,14 +1,8 @@
 #include "main.h"
 
-
-
 /**
- *
- *  * print_times_table-Prints the n times table
- *
- *   *
- *
- *    * @n: takes number input
+ * print_times_table-Prints the n times table
+ * @n: takes number input
  *
  *     */
 
