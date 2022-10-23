@@ -2,10 +2,11 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * main - checks my code
  *
- * Return: Always 0.
+ * Return: Always 0
  */
+
 int main(void)
 {
 	char c;
