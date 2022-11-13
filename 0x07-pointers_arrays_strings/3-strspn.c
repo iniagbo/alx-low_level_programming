@@ -29,8 +29,16 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 
-			i++; /*add x+1 */
+			j++; /* add j+1*/
 		}
 
-		return (count); /* return the value of count */
+		if (s[i] != accept[j]) /*If aren't equals */
+		{
+			break;
+		}
+
+		i++; /*add x+1 */
 	}
+
+	return (count); /* return the value of count */
+}
